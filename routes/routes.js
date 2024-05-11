@@ -3,20 +3,18 @@ const router = Router();
 
 /* Importing mainControllers */
 import {
-  renderIndex,
-  renderAbout,
+  renderHome,
+  renderTeam,
+  renderLatest,
+  renderTicketsHospitality,
   renderContact,
-  renderNews,
-  renderDistribution,
-  renderSustainability,
 } from "../controllers/mainController.js";
 
-router.get("/", renderIndex);
-router.get("/about", renderAbout);
+router.get("/", renderHome);
+router.get("/about", renderTeam);
+router.get("/latest", renderLatest);
+router.get("/tickets&hospitality", renderTicketsHospitality);
 router.get("/contact", renderContact);
-router.get("/news", renderNews);
-router.get("/distribution", renderDistribution);
-router.get("/sustainability", renderSustainability);
 
 export default router;
 
