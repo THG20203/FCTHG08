@@ -10,11 +10,14 @@ import {
   renderContact,
 } from "../controllers/mainController.js";
 
+/* router.get for mainControllers */
 router.get("/", renderHome);
 router.get("/about", renderTeam);
 router.get("/latest", renderLatest);
 router.get("/tickets&hospitality", renderTicketsHospitality);
 router.get("/contact", renderContact);
+
+/* router.get for secondaryControllers */
 
 export default router;
 
