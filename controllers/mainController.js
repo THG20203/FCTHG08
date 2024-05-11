@@ -11,7 +11,7 @@ export function renderLatest(req, res) {
 }
 
 export function renderTicketsHospitality(req, res) {
-  res.render("tickets&hospitality");
+  res.render("tickets-hospitality");
 }
 
 export function renderContact(req, res) {
