@@ -1,45 +1,27 @@
 // routes.js
-// Setting up routes for an Express.js application, importing controller functions and defining routes
+// Setting up routes for an Express.js application
 
 import { Router } from "express";
+import * as mainController from "../controllers/mainController.js";
+import * as secondaryController from "../controllers/secondaryController.js";
+
 const router = Router();
 
-/* Importing mainControllers */
-import {
-  renderHome,
-  renderTeam,
-  renderLatest,
-  renderTicketsHospitality,
-  renderContact,
-} from "../controllers/mainController.js";
+// Routes for mainController
+router.get("/", mainController.renderHome);
+router.get("/team", mainController.renderTeam);
+router.get("/latest", mainController.renderLatest);
+router.get("/tickets-hospitality", mainController.renderTicketsHospitality);
+router.get("/contact", mainController.renderContact);
 
-/* Importing secondaryControllers */
-import {
-  renderDiscover,
-  renderNews,
-  renderFixturesResults,
-  renderLeagueTables,
-  renderPlayersStaff,
-  renderMembership,
-  renderSeasonTickets,
-  renderTickets,
-} from "../controllers/secondaryController.js";
-
-/* Define routes for mainControllers */
-router.get("/", renderHome);
-router.get("/about", renderTeam);
-router.get("/latest", renderLatest);
-router.get("/tickets-hospitality", renderTicketsHospitality);
-router.get("/contact", renderContact);
-
-/* Define routes for secondaryControllers */
-router.get("/discover", renderDiscover);
-router.get("/news", renderNews);
-router.get("/fixtures-results", renderFixturesResults);
-router.get("/league-tables", renderLeagueTables);
-router.get("/players-staff", renderPlayersStaff);
-router.get("/membership", renderMembership);
-router.get("/season-tickets", renderSeasonTickets);
-router.get("/tickets", renderTickets);
+// Routes for secondaryController
+router.get("/discover", secondaryController.renderDiscover);
+router.get("/news", secondaryController.renderNews);
+router.get("/fixtures-results", secondaryController.renderFixturesResults);
+router.get("/league-tables", secondaryController.renderLeagueTables);
+router.get("/players-staff", secondaryController.renderPlayersStaff);
+router.get("/membership", secondaryController.renderMembership);
+router.get("/season-tickets", secondaryController.renderSeasonTickets);
+router.get("/tickets", secondaryController.renderTickets);
 
 export default router;

@@ -1,19 +1,9 @@
-export function renderHome(req, res) {
-  res.render("home");
-}
+// mainController.js
+// Controllers for main routes in the application
 
-export function renderTeam(req, res) {
-  res.render("team");
-}
-
-export function renderLatest(req, res) {
-  res.render("latest");
-}
-
-export function renderTicketsHospitality(req, res) {
+export const renderHome = (req, res) => res.render("home");
+export const renderLatest = (req, res) => res.render("latest");
+export const renderTeam = (req, res) => res.render("team");
+export const renderTicketsHospitality = (req, res) =>
   res.render("tickets-hospitality");
-}
-
-export function renderContact(req, res) {
-  res.render("contact");
-}
+export const renderContact = (req, res) => res.render("contact");
