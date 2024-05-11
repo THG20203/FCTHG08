@@ -21,3 +21,14 @@ export function renderPlayersStaff(req, res) {
 }
 
 /* Ticket Pages */
+export function renderMembership(req, res) {
+  res.render("membership");
+}
+
+export function renderSeasonTickets(req, res) {
+  res.render("seasonTickets");
+}
+
+export function renderTickets(req, res) {
+  res.render("tickets");
+}
