@@ -10,6 +10,18 @@ import {
   renderContact,
 } from "../controllers/mainController.js";
 
+/* Importing secondaryControllers */
+import {
+  renderDiscover,
+  renderNews,
+  renderFixturesResults,
+  renderLeagueTables,
+  renderPlayersStaff,
+  renderMembership,
+  renderSeasonTickets,
+  renderTickets,
+} from "../controllers/secondaryController.js";
+
 /* router.get for mainControllers */
 router.get("/", renderHome);
 router.get("/about", renderTeam);
@@ -18,6 +30,14 @@ router.get("/tickets&hospitality", renderTicketsHospitality);
 router.get("/contact", renderContact);
 
 /* router.get for secondaryControllers */
+router.get("/discover", renderDiscover);
+router.get("/news", renderNews);
+router.get("/fixtures&results", renderFixturesResults);
+router.get("/leagueTables", renderLeagueTables);
+router.get("/players&staff", renderPlayersStaff);
+router.get("/membership", renderMembership);
+router.get("/seasonTickets", renderSeasonTickets);
+router.get("/tickets", renderTickets);
 
 export default router;
 
