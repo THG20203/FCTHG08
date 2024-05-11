@@ -1,0 +1,23 @@
+{
+  "name": "fcthg08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THG20203/FCTHG08.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THG20203/FCTHG08/issues"
+  },
+  "homepage": "https://github.com/THG20203/FCTHG08#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
