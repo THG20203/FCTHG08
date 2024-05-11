@@ -1,4 +1,6 @@
 const express = require("express");
+import router from "./routes/routes.js";
+
 const app = express();
 
 app.set("view engine", "ejs");
