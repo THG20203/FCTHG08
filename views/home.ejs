@@ -1,4 +1,6 @@
-<%- include("partials/header.ejs", { title: "Home Page", pageStyle: "home" }) %>
+<!-- Header Partial -->
+<%- include("partials/_header.ejs", { title: "Home Page", pageStyle: "home" })
+%>
 
 <!-- First Navbar -->
 <div class="first-navbar__container">
@@ -64,8 +66,7 @@
 
 <div class="home-container"><p>Home Page</p></div>
 
-<!-- JavaScript Imports -->
-<script src="../js/common.js"></script>
-<script src="../js/distribution.js"></script>
-<script src="../js/utilities.js"></script>
+<!-- Common Scripts Import -->
+<%- include("partials/_scripts.ejs") %>
+<!-- Page Specific JavaScript -->
 <script src="../js/pages/mainPages/home.js"></script>

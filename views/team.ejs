@@ -1,10 +1,11 @@
-<%- include("partials/header.ejs", { title: "Team Page", pageStyle: "team" }) %>
+<!-- Header Partial -->
+<%- include("partials/_header.ejs", { title: "Team Page", pageStyle: "team" })
+%>
 
 <!-- HTML page content -->
 <div class="team-container">
   <p>Team Page</p>
 </div>
-<!-- JavaScript Imports -->
-<script src="../js/common.js"></script>
-<script src="../js/distribution.js"></script>
-<script src="../js/utilities.js"></script>
+
+<!-- Common Scripts Import -->
+<%- include("partials/_scripts.ejs") %>

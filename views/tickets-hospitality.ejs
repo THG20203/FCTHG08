@@ -1,12 +1,12 @@
-<%- include("partials/header.ejs", { title: "Tickets and Hospitality Page",
+<!-- Header Partial -->
+<%- include("partials/_header.ejs", { title: "Tickets and Hospitality Page",
 pageStyle: "tickets&hospitality" }) %>
 
 <!-- HTML page content -->
 <div class="tickets-container">
   <p>Tickets and Hospitality Page</p>
 </div>
-<!-- JavaScript Imports -->
-<script src="../js/common.js"></script>
-<script src="../js/distribution.js"></script>
-<script src="../js/utilities.js"></script>
+<!-- Common Scripts Import -->
+<%- include("partials/_scripts.ejs") %>
+<!-- Page Specific JavaScript -->
 <script src="../js/pages/mainPages/ticketAndHospitality.js"></script>
