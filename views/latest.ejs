@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latest Page</title>
-    <!-- CSS Imports -->
-    <link rel="stylesheet" href="../css/general/firstNavbar.css" />
-    <link rel="stylesheet" href="../css/general/footer.css" />
-    <link rel="stylesheet" href="../css/general/mainNavbar.css" />
-    <link rel="stylesheet" href="../css/general/typography.css" />
-    <link rel="stylesheet" href="../css/pages/latest.css" />
-    <!-- Responsive CSS file at the bottom -->
-    <link rel="stylesheet" href="../css/general/responsive.css" />
-    <!-- Google Font Import -->
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/logo/football-badge.png" />
-  </head>
-  <body>
-    <!-- HTML page content -->
-    <p>Latest Page</p>
-    <!-- JavaScript Imports -->
-    <script src="../js/common.js"></script>
-    <script src="../js/distribution.js"></script>
-    <script src="../js/utilities.js"></script>
-    <script src="../js/pages/mainPages/latest.js"></script>
-  </body>
-</html>
+<%- include("partials/latest.ejs", { title: "Latest Page", pageStyle: "latest"
+}) %>
+
+<!-- HTML page content -->
+<p>Latest Page</p>
+<!-- JavaScript Imports -->
+<script src="../js/common.js"></script>
+<script src="../js/distribution.js"></script>
+<script src="../js/utilities.js"></script>
+<script src="../js/pages/mainPages/latest.js"></script>
