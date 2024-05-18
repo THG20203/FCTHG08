@@ -55,23 +55,22 @@ html {
 
 .main-navbar {
   padding: 0 2rem;
+}
 
-  /* Navigation Links Styling */
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-
-    li {
-      padding: 0 20px;
-      position: relative;
-    }
-  }
+/* Navigation Links Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+nav li {
+  padding: 0 20px;
+  position: relative;
 }
 
 /* Dropdown Menu Styling */
-.main-dropdown__content {
+.main-navbar__dropdown--content {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -80,8 +79,7 @@ html {
   left: 0;
   top: 100%;
   z-index: 1000;
-
-  .main-dropdown:hover & {
+  &:hover {
     display: block;
   }
 }
