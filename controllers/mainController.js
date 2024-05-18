@@ -1,9 +1,13 @@
 // mainController.js
 // Controllers for main routes in the application
 
-export const renderHome = (req, res) => res.render("home");
-export const renderLatest = (req, res) => res.render("latest");
-export const renderTeam = (req, res) => res.render("team");
+export const renderHome = (req, res) =>
+  res.render("home", { pageStylePath: "main" });
+export const renderLatest = (req, res) =>
+  res.render("latest", { pageStylePath: "main" });
+export const renderTeam = (req, res) =>
+  res.render("team", { pageStylePath: "main" });
 export const renderTicketsHospitality = (req, res) =>
-  res.render("tickets-hospitality");
-export const renderContact = (req, res) => res.render("contact");
+  res.render("tickets-hospitality", { pageStylePath: "main" });
+export const renderContact = (req, res) =>
+  res.render("contact", { pageStylePath: "main" });
