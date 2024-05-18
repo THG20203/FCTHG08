@@ -1,95 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <!-- CSS Imports -->
-    <link rel="stylesheet" href="../scss/general/firstNavbar.css" />
-    <link rel="stylesheet" href="../scss/general/footer.css" />
-    <link rel="stylesheet" href="../scss/general/mainNavbar.css" />
-    <link rel="stylesheet" href="../scss/general/typography.css" />
-    <link rel="stylesheet" href="../scss/pages/home.css" />
-    <!-- Responsive CSS file at the bottom -->
-    <link rel="stylesheet" href="../scss/general/responsive.css" />
-    <!-- Google Font Import -->
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/logo/football-badge.png" />
-  </head>
-  <body>
-    <!-- First Navbar -->
-    <div class="first-navbar__container">
-      <div class="first-navbar__content">
-        <a
-          class="first-navbar__link"
-          href="mailto:advanc3dprintingltd@gmail.com"
-        >
-          <strong>
-            <span>Email</span>
-          </strong>
-          <br />
-          <span> advanc3dprintingltd@gmail.com</span>
-        </a>
-        <a class="first-navbar__link" href="tel:+447757905335">
-          <strong>
-            <span>Telephone</span>
-          </strong>
-          <br />
-          <span>+44 (0)7757 905335</span>
-        </a>
-      </div>
-    </div>
+<%- include("partials/header.ejs", { title: "Home Page", pageStyle: "home" }) %>
 
-    <!-- Main Navbar -->
-    <div class="main-navbar__container" id="navbar-container">
-      <div class="main-navbar__logo--container">
-        <img
-          src="../img/logo/football-badge.png"
-          alt="Football Badge"
-          class="main-navbar__logo"
-          id="navbar-logo"
-        />
-        <span class="main-navbar__logo--text" id="navbar-logo__text"
-          >FC THG08</span
-        >
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="mainPages/home.html">Home</a></li>
-          <li class="main-navbar__dropdown">
-            <a href="mainPages/team.html">Team</a>
-            <div class="main-navbar__dropdown--content">
-              <a href="mainPages/fixtures&results.html">Fixtures & Results</a>
-              <a href="mainPages/leagueTables.html">League Tables</a>
-              <a href="mainPages/players&staff.html">Players & Staff</a>
-            </div>
-          </li>
-          <li class="main-navbar__dropdown">
-            <a href="secondaryPages/latestPages/latest.html">Latest</a>
-            <div class="main-navbar__dropdown--content">
-              <a href="secondaryPages/latestPages/discover.html">Discover</a>
-              <a href="secondaryPages/latestPages/news.html">News</a>
-            </div>
-          </li>
-          <li class="main-navbar__dropdown">
-            <a href="mainPages/tickets&hospitality.html"
-              >Tickets & Hospitality</a
-            >
-            <div class="main-navbar__dropdown--content">
-              <a href="mainPages/membership.html">Membership</a>
-              <a href="mainPages/seasonTickets.html">Season Tickets</a>
-              <a href="mainPages/tickets.html">Tickets</a>
-            </div>
-          </li>
-          <li><a href="mainPages/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+<!-- First Navbar -->
+<div class="first-navbar__container">
+  <div class="first-navbar__content">
+    <a class="first-navbar__link" href="mailto:advanc3dprintingltd@gmail.com">
+      <strong>
+        <span>Email</span>
+      </strong>
+      <br />
+      <span> advanc3dprintingltd@gmail.com</span>
+    </a>
+    <a class="first-navbar__link" href="tel:+447757905335">
+      <strong>
+        <span>Telephone</span>
+      </strong>
+      <br />
+      <span>+44 (0)7757 905335</span>
+    </a>
+  </div>
+</div>
 
-    <!-- JavaScript Imports -->
-    <script src="../js/common.js"></script>
-    <script src="../js/distribution.js"></script>
-    <script src="../js/utilities.js"></script>
-    <script src="../js/pages/mainPages/home.js"></script>
-  </body>
-</html>
+<!-- Main Navbar -->
+<div class="main-navbar__container" id="navbar-container">
+  <div class="main-navbar__logo--container">
+    <img
+      src="../img/logo/football-badge.png"
+      alt="Football Badge"
+      class="main-navbar__logo"
+      id="navbar-logo"
+    />
+    <span class="main-navbar__logo--text" id="navbar-logo__text">FC THG08</span>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="mainPages/home.html">Home</a></li>
+      <li class="main-navbar__dropdown">
+        <a href="mainPages/team.html">Team</a>
+        <div class="main-navbar__dropdown--content">
+          <a href="mainPages/fixtures&results.html">Fixtures & Results</a>
+          <a href="mainPages/leagueTables.html">League Tables</a>
+          <a href="mainPages/players&staff.html">Players & Staff</a>
+        </div>
+      </li>
+      <li class="main-navbar__dropdown">
+        <a href="secondaryPages/latestPages/latest.html">Latest</a>
+        <div class="main-navbar__dropdown--content">
+          <a href="secondaryPages/latestPages/discover.html">Discover</a>
+          <a href="secondaryPages/latestPages/news.html">News</a>
+        </div>
+      </li>
+      <li class="main-navbar__dropdown">
+        <a href="mainPages/tickets&hospitality.html">Tickets & Hospitality</a>
+        <div class="main-navbar__dropdown--content">
+          <a href="mainPages/membership.html">Membership</a>
+          <a href="mainPages/seasonTickets.html">Season Tickets</a>
+          <a href="mainPages/tickets.html">Tickets</a>
+        </div>
+      </li>
+      <li><a href="mainPages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- JavaScript Imports -->
+<script src="../js/common.js"></script>
+<script src="../js/distribution.js"></script>
+<script src="../js/utilities.js"></script>
+<script src="../js/pages/mainPages/home.js"></script>
