@@ -7,7 +7,15 @@
   <link rel="stylesheet" href="../scss/general/footer.css" />
   <link rel="stylesheet" href="../scss/general/mainNavbar.css" />
   <link rel="stylesheet" href="../scss/general/typography.css" />
+  <!-- Page style path for main / secondary pages -->
+  <% if (pageStylePath === "main") { %>
   <link rel="stylesheet" href="../scss/pages/<%= pageStyle %>.css" />
+  <% } else { %>
+  <link
+    rel="stylesheet"
+    href="../scss/pages/secondaryPages/<%= pageStyle %>.css"
+  />
+  <% } %>
   <!-- Responsive CSS file at the bottom -->
   <link rel="stylesheet" href="../scss/general/responsive.css" />
   <!-- Google Font Import -->
