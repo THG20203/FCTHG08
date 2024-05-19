@@ -6,7 +6,8 @@ pageStyle: "tickets-hospitality", pageStylePath: "main" }) %>
 <div class="tickets-container">
   <p>Tickets and Hospitality Page</p>
 </div>
+
 <!-- Common Scripts Import -->
-<%- include("partials/_scripts.ejs") %>
+<%- include("partials/_scripts.ejs", { scriptsPath: "main" }) %>
 <!-- Page Specific JavaScript -->
 <script src="../js/pages/mainPages/ticketAndHospitality.js"></script>

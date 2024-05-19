@@ -1,6 +1,11 @@
+<% if (scriptsPath === "main") { %>
 <!-- JavaScript Imports -->
 <script src="../js/common.js"></script>
 <script src="../js/distribution.js"></script>
 <script src="../js/utilities.js"></script>
-
-/* will need to do another alternative for secondary pages! */
+<% } else { %>
+<!-- JavaScript Imports -->
+<script src="../../js/common.js"></script>
+<script src="../../js/distribution.js"></script>
+<script src="../../js/utilities.js"></script>
+<% } %>
