@@ -17,40 +17,40 @@ html {
   position: fixed;
   transition: height 0.3s ease;
   z-index: 1000; /* Keeps navbar on top */
+}
 
-  &.shrink {
-    height: 3rem;
-    top: 0;
-  }
+.main-navbar__container.shrink {
+  height: 3rem;
+  top: 0;
+}
 
-  .main-navbar__logo--container {
-    display: flex;
-    justify-content: start;
-    padding: 0 2rem;
-  }
+.main-navbar__logo--container {
+  display: flex;
+  justify-content: start;
+  padding: 0 2rem;
+}
 
-  /* Logo Image and Text Styling */
-  .main-navbar__logo {
-    width: 5rem;
-    height: auto;
-    transition: width 0.3s ease, opacity 0.3s ease;
+/* Logo Image and Text Styling */
+.main-navbar__logo {
+  width: 5rem;
+  height: auto;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
 
-    &.hide {
-      opacity: 0;
-      visibility: hidden;
-      width: 0;
-    }
-  }
+.main-navbar__logo.hide {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+}
 
-  .main-navbar__logo--text {
-    display: none;
-    color: blue;
-    font-size: 2rem;
+.main-navbar__logo--text {
+  display: none;
+  color: blue;
+  font-size: 2rem;
+}
 
-    .shrink & {
-      display: block;
-    }
-  }
+.shrink .main-navbar__logo--text {
+  display: block;
 }
 
 .main-navbar {
@@ -79,7 +79,8 @@ nav li {
   left: 0;
   top: 100%;
   z-index: 1000;
-  &:hover {
-    display: block;
-  }
+}
+
+.main-navbar__dropdown--content:hover {
+  display: block;
 }
