@@ -3,7 +3,13 @@
 "news", pageStylePath: "secondary" }) %>
 
 <!-- HTML page content -->
-<p>News Page</p>
+<div class="container">
+  <!-- First Navbar Import -->
+  <%- include("../../partials/_firstNavbar.ejs") %>
+
+  <!-- Main Navbar Import -->
+  <%- include("../../partials/_mainNavbar.ejs") %>
+</div>
 
 <!-- Common Scripts Import -->
 <%- include("../../partials/_scripts.ejs", { scriptsPath: "secondary" }) %>
