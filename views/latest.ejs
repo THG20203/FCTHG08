@@ -9,12 +9,12 @@ pageStylePath: "main" })%>
 
   <!-- Main Navbar Import -->
   <%- include("partials/_mainNavbar.ejs") %>
+
+  <!-- Footer Partial -->
+  <%- include("partials/_footer.ejs") %>
+
+  <!-- Common Scripts Import -->
+  <%- include("partials/_scripts.ejs", { scriptsPath: "main" }) %>
+  <!-- Page Specific JavaScript -->
+  <script src="../js/pages/mainPages/latest.js"></script>
 </div>
-
-<!-- Common Scripts Import -->
-<%- include("partials/_scripts.ejs", { scriptsPath: "main" }) %>
-<!-- Page Specific JavaScript -->
-<script src="../js/pages/mainPages/latest.js"></script>
-
-<!-- Footer Partial -->
-<%- include("partials/_footer.ejs") %>

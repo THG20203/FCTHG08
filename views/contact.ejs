@@ -9,15 +9,10 @@
 
   <!-- Main Navbar Import -->
   <%- include("partials/_mainNavbar.ejs") %>
+
+  <!-- Footer Partial -->
+  <%- include("partials/_footer.ejs") %>
+
+  <!-- Common Scripts Import -->
+  <%- include("partials/_scripts.ejs", { scriptsPath: "main" }) %>
 </div>
-
-<!-- HTML page content -->
-<div class="contact-container">
-  <p>Contact Us Page</p>
-</div>
-
-<!-- Common Scripts Import -->
-<%- include("partials/_scripts.ejs", { scriptsPath: "main" }) %>
-
-<!-- Footer Partial -->
-<%- include("partials/_footer.ejs") %>
