@@ -11,7 +11,7 @@ let navbar = document.getElementById("navbar-container");
 let navbarLogo = document.getElementById("navbar-logo");
 let navbarLogoText = document.getElementById("navbar-logo-text");
 
-/* Main Navbar */
+/* Main Navbar Scrolling */
 window.onscroll = function () {
   scrollFunction();
 };

@@ -81,6 +81,6 @@ nav li {
   z-index: 1000;
 }
 
-.main-navbar__dropdown--content:hover {
+.main-navbar__dropdown:hover .main-navbar__dropdown--content {
   display: block;
 }

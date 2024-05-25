@@ -2,30 +2,15 @@
 <%- include("partials/_header.ejs", { title: "Home Page", pageStyle: "home",
 pageStylePath: "main" }) %>
 
-<!-- First Navbar -->
-<div class="first-navbar__container">
-  <div class="first-navbar__content">
-    <a class="first-navbar__link" href="mailto:advanc3dprintingltd@gmail.com">
-      <strong>
-        <span>Email</span>
-      </strong>
-      <br />
-      <span> advanc3dprintingltd@gmail.com</span>
-    </a>
-    <a class="first-navbar __link" href="tel:+447757905335">
-      <strong>
-        <span>Telephone</span>
-      </strong>
-      <br />
-      <span>+44 (0)7757 905335</span>
-    </a>
-  </div>
+<div class="container">
+  <!-- First Navbar Import -->
+  <%- include("partials/_firstNavbar.ejs") %>
+
+  <!-- Main Navbar Import -->
+  <%- include("partials/_mainNavbar.ejs") %>
+
+  <p>Home Page</p>
 </div>
-
-<!-- Main Navbar Import -->
-<%- include("partials/_mainNavbar.ejs") %>
-
-<div class="home-container"><p>Home Page</p></div>
 
 <!-- Common Scripts Import -->
 <%- include("partials/_scripts.ejs", { scriptsPath: "main" }) %>
