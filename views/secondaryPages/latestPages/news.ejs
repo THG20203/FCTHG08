@@ -9,10 +9,10 @@
 
   <!-- Main Navbar Import -->
   <%- include("../../partials/_mainNavbar.ejs") %>
+
+  <!-- Footer Partial -->
+  <%- include("../../partials/_footer.ejs") %>
+
+  <!-- Common Scripts Import -->
+  <%- include("../../partials/_scripts.ejs", { scriptsPath: "secondary" }) %>
 </div>
-
-<!-- Common Scripts Import -->
-<%- include("../../partials/_scripts.ejs", { scriptsPath: "secondary" }) %>
-
-<!-- Footer Partial -->
-<%- include("../../partials/_footer.ejs") %>
