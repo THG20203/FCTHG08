@@ -9,26 +9,13 @@
     [content-end] 10vw
     [full-end];
   background-color: var(--light-grey);
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--medium-grey);
 }
 
 .first-navbar__container .first-navbar__content {
   grid-column: col-start 5 / content-end;
-  background-color: var(--grey);
-  margin-bottom: 1rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 75%);
+  margin: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.first-navbar__container .first-navbar__content .first-navbar__link {
-  padding: 0 3rem;
-  text-decoration: none;
-  color: white;
-  font-size: 1.6rem;
-}
-
-.first-navbar__container .first-navbar__content .first-navbar__link:hover {
-  scale: 1.1;
 }
