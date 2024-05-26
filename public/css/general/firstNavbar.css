@@ -14,14 +14,19 @@
 
 .first-navbar__container .first-navbar__content {
   grid-column: col-start 7 / content-end;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .first-navbar__image {
-  width: 4rem;
+  width: 2.5rem;
   display: block;
   cursor: pointer;
+  filter: invert(0.3) sepia(1) saturate(0.7) hue-rotate(180deg);
+}
+
+.first-navbar__image:hover {
+  filter: none;
 }
