@@ -3,3 +3,14 @@
   --medium-grey: #bfbfbf;
   --navy-blue: #0a19a1;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 20rem 30rem min-content;
+  padding-top: 7rem;
+  height: 100vh;
+}
+
+.container.container--shrink {
+  padding-top: 0rem;
+}

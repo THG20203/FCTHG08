@@ -1,41 +1,45 @@
 <!-- Main Navbar -->
-<div class="main-navbar__container" id="navbar-container">
-  <div class="main-navbar__logo--container">
-    <img
-      src="../img/logo/football-badge.png"
-      alt="Football Badge"
-      class="main-navbar__logo"
-      id="navbar-logo"
-    />
-    <span class="main-navbar__logo--text" id="navbar-logo__text">FC THG08</span>
+<div class="main-navbar__container" id="main-navbar__container">
+  <div class="main-navbar__content" id="main-navbar__content">
+    <div class="main-navbar__logo--container">
+      <img
+        src="../img/logo/football-badge.png"
+        alt="Football Badge"
+        class="main-navbar__logo"
+        id="main-navbar__logo"
+      />
+      <span class="main-navbar__logo--text" id="main-navbar__logo--text"
+        >FC THG08</span
+      >
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="main-navbar__dropdown">
+          <a href="/team">Team</a>
+          <div class="main-navbar__dropdown--content">
+            <a href="/fixtures-results">Fixtures & Results</a>
+            <a href="/league-tables">League Tables</a>
+            <a href="/players-staff">Players & Staff</a>
+          </div>
+        </li>
+        <li class="main-navbar__dropdown">
+          <a href="/latest">Latest</a>
+          <div class="main-navbar__dropdown--content">
+            <a href="/discover">Discover</a>
+            <a href="/news">News</a>
+          </div>
+        </li>
+        <li class="main-navbar__dropdown">
+          <a href="/tickets-hospitality">Tickets & Hospitality</a>
+          <div class="main-navbar__dropdown--content">
+            <a href="/membership">Membership</a>
+            <a href="/season-tickets">Season Tickets</a>
+            <a href="/tickets">Tickets</a>
+          </div>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="navbar">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li class="main-navbar__dropdown">
-        <a href="/team">Team</a>
-        <div class="main-navbar__dropdown--content">
-          <a href="/fixtures-results">Fixtures & Results</a>
-          <a href="/league-tables">League Tables</a>
-          <a href="/players-staff">Players & Staff</a>
-        </div>
-      </li>
-      <li class="main-navbar__dropdown">
-        <a href="/latest">Latest</a>
-        <div class="main-navbar__dropdown--content">
-          <a href="/discover">Discover</a>
-          <a href="/news">News</a>
-        </div>
-      </li>
-      <li class="main-navbar__dropdown">
-        <a href="/tickets-hospitality">Tickets & Hospitality</a>
-        <div class="main-navbar__dropdown--content">
-          <a href="/membership">Membership</a>
-          <a href="/season-tickets">Season Tickets</a>
-          <a href="/tickets">Tickets</a>
-        </div>
-      </li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </nav>
 </div>

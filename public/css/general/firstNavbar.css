@@ -1,5 +1,4 @@
 .first-navbar__container {
-  grid-column: full-start / full-end;
   display: grid;
   grid-template-columns:
     [full-start] 10vw
@@ -10,6 +9,8 @@
     [full-end];
   background-color: var(--light-grey);
   border-bottom: 1px solid var(--medium-grey);
+  height: 4rem;
+  z-index: 1000;
 }
 
 .first-navbar__container .first-navbar__content {

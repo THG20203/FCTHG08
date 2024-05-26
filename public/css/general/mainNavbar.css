@@ -8,18 +8,28 @@ html {
 }
 
 .main-navbar__container {
-  width: 100%;
+  width: 100vw;
   height: 7rem;
+  z-index: 1000; /* Keeps navbar on top */
+  position: fixed;
+  background-color: var(--light-grey);
+}
+
+.main-navbar__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--light-grey);
-  position: fixed;
-  transition: height 0.3s ease;
-  z-index: 1000; /* Keeps navbar on top */
+  transition: height 0.1s ease;
+  margin: 0 10vw;
+  height: 7rem;
 }
 
-.main-navbar__container.shrink {
+.main-navbar__container.main-navbar__container--shrink {
+  height: 3rem;
+  top: 0;
+}
+
+.main-navbar__content.main-navbar__content--shrink {
   height: 3rem;
   top: 0;
 }

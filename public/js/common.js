@@ -7,9 +7,11 @@ and mobile menu visibility. */
 up event listeners for common elements. */
 
 /* element definitions */
-let navbar = document.getElementById("navbar-container");
-let navbarLogo = document.getElementById("navbar-logo");
-let navbarLogoText = document.getElementById("navbar-logo-text");
+let navbar = document.getElementById("main-navbar__container");
+let navbarContent = document.getElementById("main-navbar__content");
+let navbarLogo = document.getElementById("main-navbar__logo");
+let navbarLogoText = document.getElementById("main-navbar__logo--text");
+let container = document.getElementById("container");
 
 /* Main Navbar Scrolling */
 window.onscroll = function () {
@@ -18,13 +20,16 @@ window.onscroll = function () {
 
 const scrollFunction = function () {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    navbar.classList.add("shrink");
+    navbar.classList.add("main-navbar__container--shrink");
+    navbarContent.classList.add("main-navbar__content--shrink");
     navbarLogo.classList.add("hide");
     navbarLogoText.style.display = "block";
+    container.classList.add("container--shrink");
   } else {
-    navbar.classList.remove("shrink");
+    navbar.classList.remove("main-navbar__container--shrink");
+    navbarContent.classList.remove("main-navbar__content--shrink");
     navbarLogo.classList.remove("hide");
     navbarLogoText.style.display = "none";
-    navbarLogoText.style.width = "none";
+    container.classList.remove("container--shrink");
   }
 };
